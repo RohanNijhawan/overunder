@@ -9,7 +9,7 @@
  */
 async function getFactsForDate(dateStr) {
   try {
-    const r = await fetch(`/facts/${dateStr}.json`);
+    const r = await fetch(`facts/${dateStr}.json`);
     return r.ok ? r.json() : null;
   } catch {
     return null;
