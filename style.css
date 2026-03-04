@@ -1,0 +1,405 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f0f4f8;
+  --card-bg: #ffffff;
+  --text: #1e293b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --over: #3b82f6;
+  --under: #d97706;
+  --correct: #10b981;
+  --correct-light: #d1fae5;
+  --correct-dark: #065f46;
+  --wrong: #ef4444;
+  --wrong-light: #fee2e2;
+  --wrong-dark: #991b1b;
+  --submit: #1e293b;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+
+/* ── Header ─────────────────────────────────────────── */
+
+header {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  padding: 0.875rem 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+header p {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 0.125rem;
+}
+
+/* ── App container ───────────────────────────────────── */
+
+#app {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ── Game header (date + attempt counter) ────────────── */
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0 0.875rem;
+}
+
+.date,
+.attempts-info {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* ── Guess history ───────────────────────────────────── */
+
+.guess-history {
+  background: white;
+  border-radius: var(--radius);
+  padding: 0.875rem 1.125rem;
+  margin-bottom: 0.75rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* ── Facts list ──────────────────────────────────────── */
+
+.facts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.fact-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1rem 1.125rem;
+  display: flex;
+  gap: 0.875rem;
+  align-items: flex-start;
+  border: 2px solid transparent;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.fact-card.correct {
+  border-color: var(--correct);
+  background: var(--correct-light);
+}
+
+.fact-card.wrong {
+  border-color: var(--wrong);
+  background: var(--wrong-light);
+}
+
+.fact-number {
+  width: 1.625rem;
+  height: 1.625rem;
+  border-radius: 50%;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.fact-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.fact-statement {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Over / Under buttons ────────────────────────────── */
+
+.guess-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.guess-btn {
+  flex: 1;
+  padding: 0.5rem 0.25rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s, opacity 0.15s;
+}
+
+.guess-btn:disabled {
+  cursor: default;
+}
+
+.over-btn {
+  border-color: var(--over);
+  color: var(--over);
+  background: white;
+}
+
+.over-btn.selected {
+  background: var(--over);
+  color: white;
+}
+
+.over-btn:hover:not(:disabled):not(.selected) {
+  background: #eff6ff;
+}
+
+.under-btn {
+  border-color: var(--under);
+  color: var(--under);
+  background: white;
+}
+
+.under-btn.selected {
+  background: var(--under);
+  color: white;
+}
+
+.under-btn:hover:not(:disabled):not(.selected) {
+  background: #fffbeb;
+}
+
+/* ── Submit area ─────────────────────────────────────── */
+
+.submit-area {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.875rem;
+  background: var(--submit);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  transition: opacity 0.15s;
+}
+
+.submit-btn:hover:not(.disabled) {
+  opacity: 0.84;
+}
+
+.submit-btn.disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.submit-hint {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+/* ── End game layout ─────────────────────────────────── */
+
+.end-game {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.result-message {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.result-message.won {
+  background: var(--correct-light);
+  color: var(--correct-dark);
+}
+
+.result-message.lost {
+  background: var(--wrong-light);
+  color: var(--wrong-dark);
+}
+
+/* ── Share section ───────────────────────────────────── */
+
+.share-section {
+  background: white;
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.share-section h3,
+.answers-section h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  color: var(--text-muted);
+  margin-bottom: 0.875rem;
+}
+
+.attempts-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.125rem;
+}
+
+.attempt-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.attempt-label {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  width: 5.5rem;
+  flex-shrink: 0;
+}
+
+.squares {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.square {
+  width: 1.375rem;
+  height: 1.375rem;
+  border-radius: 4px;
+}
+
+.sq-correct {
+  background: var(--correct);
+}
+
+.sq-wrong {
+  background: var(--wrong);
+}
+
+.attempt-score {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.share-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--submit);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.share-btn:hover {
+  opacity: 0.84;
+}
+
+.share-btn.copied {
+  background: var(--correct);
+}
+
+/* ── Answers section (endgame fact cards) ────────────── */
+
+.fact-reveal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 0.375rem;
+}
+
+.correct-answer {
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+
+.actual-value {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.citation-link {
+  font-size: 0.75rem;
+  color: var(--over);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.citation-link:hover {
+  text-decoration: underline;
+}
+
+/* ── Error state ─────────────────────────────────────── */
+
+.error {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+
+@media (max-width: 400px) {
+  .fact-statement {
+    font-size: 0.875rem;
+  }
+
+  .guess-btn {
+    font-size: 0.8125rem;
+  }
+}
