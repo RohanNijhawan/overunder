@@ -5,6 +5,8 @@ const MAX_ATTEMPTS = 3;
 let state = {
   date: "",
   facts: [],
+  source: "",
+  sourceUrl: "",
   currentGuesses: [], // null | "over" | "under" per fact
   attempts: [],       // { guesses, score, results[] }
   gameOver: false,
@@ -203,9 +205,6 @@ function renderEndGame() {
             <span class="correct-answer">${label}</span>
             <span class="actual-value">Actual: ${fact.actual}</span>
           </div>
-          <a class="citation-link" href="${fact.sourceUrl}" target="_blank" rel="noopener noreferrer">
-            ↗ ${fact.source}
-          </a>
         </div>
       </div>`;
     })
@@ -246,6 +245,11 @@ function renderEndGame() {
         <h3>Today's Answers</h3>
         <div class="facts-list">${factsHtml}</div>
       </div>
+
+      <div class="wiki-footer">
+        <a href="${state.sourceUrl}" target="_blank" rel="noopener noreferrer">Continue learning on ${state.source} →</a>
+        <a href="https://wikimediafoundation.org/give/" target="_blank" rel="noopener noreferrer">Support Wikipedia</a>
+      </div>
     </div>`;
 }
 
@@ -279,6 +283,8 @@ async function init() {
 
   state.date = today;
   state.facts = data.facts;
+  state.source = data.source;
+  state.sourceUrl = data.sourceUrl;
   state.currentGuesses = Array(data.facts.length).fill(null);
   render();
 }

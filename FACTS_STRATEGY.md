@@ -50,18 +50,20 @@ Format each day's facts as:
 
 ```json
 {
+  "source": "Wikipedia: Saturn",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Saturn",
   "facts": [
     {
       "statement": "Saturn's mass is 50 times that of Earth",
       "answer": "over",
-      "actual": "95.159 times Earth's mass",
-      "source": "Wikipedia: Saturn",
-      "sourceUrl": "https://en.wikipedia.org/wiki/Saturn"
+      "actual": "95.159 times Earth's mass"
     }
     // ...4 more
   ]
 }
 ```
+
+`source` and `sourceUrl` are top-level since all 5 facts come from the same article. The end screen shows a single "Continue learning on Wikipedia" link and a Wikimedia donate link.
 
 ### 5. Save and Commit
 Save as `/facts/YYYY-MM-DD.json` and commit to the repo. Facts are now live for that date.

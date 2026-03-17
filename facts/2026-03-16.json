@@ -1,0 +1,31 @@
+{
+  "source": "Wikipedia: Saturn",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Saturn",
+  "facts": [
+    {
+      "statement": "Saturn's average distance from the Sun is 1 billion kilometers",
+      "answer": "over",
+      "actual": "1.434 billion km (9.58 AU)"
+    },
+    {
+      "statement": "Saturn has 50 moons with formal names",
+      "answer": "over",
+      "actual": "63 moons with formal names (274 total known)"
+    },
+    {
+      "statement": "Saturn's day is 20 hours long",
+      "answer": "under",
+      "actual": "10 hours 33 minutes to 10 hours 47 minutes"
+    },
+    {
+      "statement": "Saturn's rings are 1,000 km thick",
+      "answer": "under",
+      "actual": "About 20 meters thick"
+    },
+    {
+      "statement": "Saturn's mass is 50 times that of Earth",
+      "answer": "over",
+      "actual": "95.159 times Earth's mass"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
  * Facts data layer.
  *
  * Daily facts are stored as static JSON files under /facts/YYYY-MM-DD.json.
- * Each file contains: { "facts": [ { statement, answer, actual, source, sourceUrl } ] }
+ * Each file contains: { source, sourceUrl, facts: [ { statement, answer, actual } ] }
  *
  * To switch to a server, replace getFactsForDate with:
  *   return fetch(`/api/facts?date=${dateStr}`).then(r => r.json());
