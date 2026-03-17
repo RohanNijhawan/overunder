@@ -1,0 +1,31 @@
+{
+  "source": "Wikipedia: Sahara",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Sahara",
+  "facts": [
+    {
+      "statement": "The Sahara Desert covers less than 5 million km²",
+      "answer": "over",
+      "actual": "About 9,200,000 km², roughly the size of the United States"
+    },
+    {
+      "statement": "The Sahara Desert spans fewer than 5 countries",
+      "answer": "over",
+      "actual": "Spans 11 countries (Algeria, Chad, Egypt, Libya, Mali, Mauritania, Morocco, Niger, Sudan, Tunisia, and SADR)"
+    },
+    {
+      "statement": "The average high temperature in the Sahara exceeds 50°C in the hottest months",
+      "answer": "under",
+      "actual": "Average highs reach up to 46.4°C"
+    },
+    {
+      "statement": "The Sahara has a population of over 10 million people",
+      "answer": "under",
+      "actual": "About 2,500,000 people live in the Sahara"
+    },
+    {
+      "statement": "The Sahara stretches 2,000 km from east to west",
+      "answer": "over",
+      "actual": "Approximately 4,800 km from the Atlantic Ocean to the Red Sea"
+    }
+  ]
+}

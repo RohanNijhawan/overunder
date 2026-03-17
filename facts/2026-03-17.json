@@ -1,0 +1,31 @@
+{
+  "source": "Wikipedia: Great Barrier Reef",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Great_Barrier_Reef",
+  "facts": [
+    {
+      "statement": "The Great Barrier Reef contains 500 individual reefs",
+      "answer": "over",
+      "actual": "Over 2,900 individual reefs"
+    },
+    {
+      "statement": "The Great Barrier Reef stretches 1,500 km along Australia's coast",
+      "answer": "over",
+      "actual": "Over 2,300 km"
+    },
+    {
+      "statement": "The Great Barrier Reef covers an area of 500,000 km²",
+      "answer": "under",
+      "actual": "Approximately 344,400 km²"
+    },
+    {
+      "statement": "The Great Barrier Reef is home to 3,000 species of fish",
+      "answer": "under",
+      "actual": "More than 1,500 species of fish"
+    },
+    {
+      "statement": "The Great Barrier Reef has 50 species of sharks, rays, and skates",
+      "answer": "over",
+      "actual": "About 125 species of sharks, rays, skates, and chimaeras"
+    }
+  ]
+}

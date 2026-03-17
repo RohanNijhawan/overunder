@@ -1,0 +1,31 @@
+{
+  "source": "Wikipedia: Vatican City",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Vatican_City",
+  "facts": [
+    {
+      "statement": "Vatican City covers less than 0.1 km²",
+      "answer": "over",
+      "actual": "0.49 km² (about 49 hectares)"
+    },
+    {
+      "statement": "Vatican City has fewer than 200 permanent residents",
+      "answer": "over",
+      "actual": "882 residents (2024)"
+    },
+    {
+      "statement": "The Vatican Gardens cover more than 30 hectares",
+      "answer": "under",
+      "actual": "About 23 hectares, more than half of Vatican City's total area"
+    },
+    {
+      "statement": "The Swiss Guard protecting the Vatican numbers over 500",
+      "answer": "under",
+      "actual": "104 members of the Pontifical Swiss Guard"
+    },
+    {
+      "statement": "Vatican City's highest point is over 100 meters above sea level",
+      "answer": "under",
+      "actual": "About 60 meters above sea level"
+    }
+  ]
+}

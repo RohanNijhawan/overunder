@@ -1,0 +1,31 @@
+{
+  "source": "Wikipedia: Trans-Siberian Railway",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Trans-Siberian_Railway",
+  "facts": [
+    {
+      "statement": "The Trans-Siberian Railway is under 8,000 km long",
+      "answer": "over",
+      "actual": "9,289 km, the world's longest railway"
+    },
+    {
+      "statement": "Construction on the Trans-Siberian Railway began over 200 years ago",
+      "answer": "under",
+      "actual": "Construction began on March 9, 1891, about 135 years ago"
+    },
+    {
+      "statement": "The Trans-Siberian Railway crosses fewer than 5 time zones",
+      "answer": "over",
+      "actual": "Crosses 7 time zones (Moscow at UTC+3 to Vladivostok at UTC+10)"
+    },
+    {
+      "statement": "A full journey on the Trans-Siberian Railway takes over 10 days",
+      "answer": "under",
+      "actual": "The full journey takes approximately 6 days"
+    },
+    {
+      "statement": "The Trans-Siberian Railway's maximum speed is over 200 km/h",
+      "answer": "under",
+      "actual": "Maximum speed is 60–140 km/h"
+    }
+  ]
+}

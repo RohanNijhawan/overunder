@@ -28,22 +28,50 @@ return fetch(`/facts/${dateStr}.json`).then(r => r.json());
 Choose a topic with lots of measurable numbers (space, geography, history, science, sports records, etc.).
 
 ### 2. Download the Article in Raw Format
+
+> ⚠️ **CRITICAL — NO EXCEPTIONS:** You MUST use `curl` to download the raw Wikipedia wikitext before extracting any facts. You must NEVER:
+> - Use WebFetch or any web-fetching tool
+> - Use training data, memory, or prior knowledge for fact values
+> - Guess or estimate numbers from general knowledge
+>
+> Every single number in every fact MUST come directly from the downloaded raw file. If you are not certain a number appears in the downloaded file, do not use it.
+
 Use `curl` to fetch the article's raw wikitext:
 
 ```sh
-curl -o ARTICLE_raw.txt "https://en.wikipedia.org/w/index.php?title=ARTICLE_TITLE&action=raw"
+curl -s -o /tmp/ARTICLE_raw.txt "https://en.wikipedia.org/w/index.php?title=ARTICLE_TITLE&action=raw"
 ```
 Example for Saturn:
 ```sh
-curl -o saturn_raw.txt "https://en.wikipedia.org/w/index.php?title=Saturn&action=raw"
+curl -s -o /tmp/saturn_raw.txt "https://en.wikipedia.org/w/index.php?title=Saturn&action=raw"
 ```
+
+**Check for redirect first:**
+```sh
+wc -l /tmp/ARTICLE_raw.txt
+```
+If the output is `1`, the file is a redirect (e.g. `#REDIRECT [[Kīlauea]]`). Re-fetch using the redirect target with URL-encoded title (e.g. `Kīlauea` → `K%C4%ABlauea`).
+
+**Extract numbers — Step A: Infobox fields (most reliable, run this first)**
+```sh
+grep -E '^\s*\|' /tmp/ARTICLE_raw.txt | grep -E '[0-9]' | head -60
+```
+Wikipedia infoboxes contain the most precise, citable numbers (area, length, population, speed, elevation, etc.) in compact form.
+
+**Extract numbers — Step B: Prose with measurement units (for additional variety)**
+```sh
+grep -iE '(km|metres?|meters?|miles?|tonnes?|kg|°[CF]|years? old|km/h|billion|million|hectare|elevation|depth|pressure)' /tmp/ARTICLE_raw.txt | grep -v '^\s*[|!{]' | head -40
+```
+Catches measurement mentions in article body text not found in the infobox.
+
+Only use numbers that appear in the output of these two commands. Do not use any number from memory or training data.
 
 ### 3. Extract Over/Under Facts
 - Read the downloaded file and identify 5 numerical claims that are:
   - Varied (cover different aspects of the topic)
   - Fun, interesting, or thought-provoking
-  - Not trivially obvious (numbers should be plausible but not instantly guessable)
-  - Unambiguous and clearly supported by the article
+  - Not trivially obvious — the stated number should be plausible but the real answer surprisingly different
+  - Unambiguous and clearly supported by the downloaded article text
 
 ### 4. Write the Facts JSON
 Format each day's facts as:

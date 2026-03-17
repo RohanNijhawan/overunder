@@ -1,0 +1,31 @@
+{
+  "source": "Wikipedia: Blue whale",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Blue_whale",
+  "facts": [
+    {
+      "statement": "A blue whale can be over 40 meters long",
+      "answer": "under",
+      "actual": "Confirmed up to 29.9–30.5 m; one individual measured at 33 m"
+    },
+    {
+      "statement": "A typical blue whale weighs over 50 tonnes",
+      "answer": "over",
+      "actual": "Northern Hemisphere females average 112 tonnes; males average 100 tonnes"
+    },
+    {
+      "statement": "A blue whale can engulf over 300 tonnes of water in a single lunge",
+      "answer": "under",
+      "actual": "About 220 tonnes of water per lunge"
+    },
+    {
+      "statement": "Blue whales live for over 100 years",
+      "answer": "under",
+      "actual": "Lifespan is 80–90+ years"
+    },
+    {
+      "statement": "Blue whale calls are above 20 Hz in frequency",
+      "answer": "under",
+      "actual": "Blue whale calls range from 8–25 Hz, mostly below human hearing"
+    }
+  ]
+}

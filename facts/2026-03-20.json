@@ -1,0 +1,31 @@
+{
+  "source": "Wikipedia: International Space Station",
+  "sourceUrl": "https://en.wikipedia.org/wiki/International_Space_Station",
+  "facts": [
+    {
+      "statement": "The ISS travels at over 30,000 km/h in orbit",
+      "answer": "under",
+      "actual": "27,600 km/h"
+    },
+    {
+      "statement": "The ISS orbits Earth more than 10 times per day",
+      "answer": "over",
+      "actual": "15.5 orbits per day"
+    },
+    {
+      "statement": "The ISS weighs less than 300,000 kg",
+      "answer": "over",
+      "actual": "Approximately 450,000 kg"
+    },
+    {
+      "statement": "The ISS orbits at an altitude of over 500 km",
+      "answer": "under",
+      "actual": "413–422 km above Earth"
+    },
+    {
+      "statement": "The ISS's solar arrays span less than 50 meters wide",
+      "answer": "over",
+      "actual": "239 feet (~73 m) wide"
+    }
+  ]
+}
