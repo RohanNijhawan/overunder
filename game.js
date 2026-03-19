@@ -139,7 +139,7 @@ function buildShareText() {
     })
     .join("\n");
 
-  return `${header}\n${result}\n\n${rows}`;
+  return `${header}\n${result}\n\n${rows}\n\nhttps://rohannijhawan.github.io/overunder/`;
 }
 
 // ─── Render ──────────────────────────────────────────────────────────────────
