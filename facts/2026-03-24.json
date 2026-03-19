@@ -3,29 +3,29 @@
   "sourceUrl": "https://en.wikipedia.org/wiki/Blue_whale",
   "facts": [
     {
-      "statement": "A blue whale can be over 40 meters long",
-      "answer": "under",
-      "actual": "Confirmed up to 29.9–30.5 m; one individual measured at 33 m"
-    },
-    {
-      "statement": "A typical blue whale weighs over 50 tonnes",
+      "statement": "A blue whale can consume 100,000 calories from a single mouthful of krill",
       "answer": "over",
-      "actual": "Northern Hemisphere females average 112 tonnes; males average 100 tonnes"
+      "actual": "A single mouthful can yield up to 457,141 kcal"
     },
     {
-      "statement": "A blue whale can engulf over 300 tonnes of water in a single lunge",
-      "answer": "under",
-      "actual": "About 220 tonnes of water per lunge"
+      "statement": "A blue whale can weigh up to 100 tonnes",
+      "answer": "over",
+      "actual": "Blue whales can weigh up to 190–200 tonnes, making them the largest animal to have ever existed"
     },
     {
-      "statement": "Blue whales live for over 100 years",
-      "answer": "under",
-      "actual": "Lifespan is 80–90+ years"
+      "statement": "The IWC banned blue whale hunting in 1950",
+      "answer": "over",
+      "actual": "The International Whaling Commission banned all blue whale hunting in 1966"
     },
     {
-      "statement": "Blue whale calls are above 20 Hz in frequency",
-      "answer": "under",
-      "actual": "Blue whale calls range from 8–25 Hz, mostly below human hearing"
+      "statement": "The earliest blue whale fossil dates back 50,000 years",
+      "answer": "over",
+      "actual": "The earliest known blue whale fossil dates to the Early Pleistocene, roughly 1.5–1.25 million years ago"
+    },
+    {
+      "statement": "The oldest known blue whale was 80 years old",
+      "answer": "over",
+      "actual": "The oldest blue whale on record was found to be 110 years old"
     }
   ]
 }

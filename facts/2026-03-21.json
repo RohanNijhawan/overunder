@@ -3,27 +3,27 @@
   "sourceUrl": "https://en.wikipedia.org/wiki/Cheetah",
   "facts": [
     {
-      "statement": "A cheetah's top speed is over 120 km/h",
+      "statement": "A cheetah's top speed is 120 km/h",
       "answer": "under",
       "actual": "93–104 km/h"
     },
     {
-      "statement": "There are fewer than 5,000 cheetahs remaining in the wild",
+      "statement": "There are 5,000 cheetahs remaining in the wild",
       "answer": "over",
       "actual": "Approximately 6,517 individuals (2021)"
     },
     {
-      "statement": "A cheetah's litter typically has more than 5 cubs",
+      "statement": "The last confirmed cheetah sighting in India was in 1981",
       "answer": "under",
-      "actual": "Typically 3–4 cubs per litter"
+      "actual": "The last confirmed sighting in India was in 1957"
     },
     {
-      "statement": "A cheetah is less than 1 meter long",
+      "statement": "A galloping cheetah's stride is 3 meters long",
       "answer": "over",
-      "actual": "Body length is 1.1–1.5 m"
+      "actual": "One stride measures 4–7 m (13–23 ft)"
     },
     {
-      "statement": "A cheetah can weigh over 80 kg",
+      "statement": "A cheetah can weigh 80 kg",
       "answer": "under",
       "actual": "Adults weigh 21–65 kg"
     }

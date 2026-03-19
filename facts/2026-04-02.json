@@ -1,0 +1,31 @@
+{
+  "source": "Wikipedia: Amazon River",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Amazon_River",
+  "facts": [
+    {
+      "statement": "The Amazon River (source to sea) is 5,000 km long",
+      "answer": "over",
+      "actual": "6,400–6,500 km including its full source system"
+    },
+    {
+      "statement": "The Amazon River discharges 400,000 m³ of water per second at its peak",
+      "answer": "under",
+      "actual": "Peak discharge up to 340,000 m³/s"
+    },
+    {
+      "statement": "The Amazon River basin covers 5 million km²",
+      "answer": "over",
+      "actual": "7,050,000 km²"
+    },
+    {
+      "statement": "The Amazon River's maximum depth is 100 meters",
+      "answer": "over",
+      "actual": "Maximum depth is approximately 150 meters"
+    },
+    {
+      "statement": "The Amazon River covers about 50% of South America",
+      "answer": "under",
+      "actual": "The river covers about 40% of South America"
+    }
+  ]
+}

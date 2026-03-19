@@ -3,27 +3,27 @@
   "sourceUrl": "https://en.wikipedia.org/wiki/Eiffel_Tower",
   "facts": [
     {
-      "statement": "The Eiffel Tower stands over 400 meters tall",
+      "statement": "The Eiffel Tower stands 400 meters tall",
       "answer": "under",
       "actual": "300 m architectural height; 324 m to the current antenna tip"
     },
     {
-      "statement": "The Eiffel Tower weighs over 50,000 tonnes",
+      "statement": "100 tons of paint are applied to the Eiffel Tower to prevent rust every 7 years",
       "answer": "under",
-      "actual": "Total weight approximately 10,100 tonnes (iron weight: 7,300 tonnes)"
+      "actual": "Maintenance of the tower includes applying 60 tons of paint every 7 years"
     },
     {
-      "statement": "The Eiffel Tower contains over 5 million rivets",
+      "statement": "The Eiffel Tower contains 5 million rivets",
       "answer": "under",
       "actual": "Approximately 2.5 million rivets"
     },
     {
-      "statement": "The Eiffel Tower is made up of over 10,000 different parts",
+      "statement": "The Eiffel Tower is made up of 10,000 different parts",
       "answer": "over",
       "actual": "18,038 individual metal parts"
     },
     {
-      "statement": "More than 10 workers died during the construction of the Eiffel Tower",
+      "statement": "10 workers died during the construction of the Eiffel Tower",
       "answer": "under",
       "actual": "Only 1 worker died during construction"
     }

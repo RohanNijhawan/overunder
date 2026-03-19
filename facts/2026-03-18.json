@@ -3,29 +3,29 @@
   "sourceUrl": "https://en.wikipedia.org/wiki/Mount_Everest",
   "facts": [
     {
-      "statement": "Mount Everest is over 9,000 meters tall",
+      "statement": "Mount Everest is 9,000 meters tall",
       "answer": "under",
       "actual": "8,848–8,849 m (2020 survey)"
     },
     {
-      "statement": "Mount Everest's South Base Camp is below 5,000 meters",
+      "statement": "Mount Everest's South Base Camp is 5,000 meters above sea level",
       "answer": "over",
       "actual": "Approximately 5,364 m above sea level"
     },
     {
-      "statement": "The nearest sea to Mount Everest is over 1,000 km away",
+      "statement": "The nearest sea to Mount Everest is 1,000 km away",
       "answer": "under",
       "actual": "The Bay of Bengal is almost 700 km away"
     },
     {
-      "statement": "Fewer than 100 climbers' bodies remain on Mount Everest",
+      "statement": "100 climbers' bodies remain on Mount Everest",
       "answer": "over",
-      "actual": "Over 200 bodies remained on the mountain as of 2015"
+      "actual": "Over 200 bodies remain on the mountain"
     },
     {
-      "statement": "Mount Everest's North Base Camp is above 6,000 meters",
-      "answer": "under",
-      "actual": "5,180 m above sea level"
+      "statement": "Mount Everest was first summited in 1950",
+      "answer": "over",
+      "actual": "Mount Everest was first summited in 1953 by Sir Edmund Hillary and Tenzing Norgay"
     }
   ]
 }

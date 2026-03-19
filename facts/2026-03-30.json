@@ -3,17 +3,17 @@
   "sourceUrl": "https://en.wikipedia.org/wiki/Mariana_Trench",
   "facts": [
     {
-      "statement": "The Mariana Trench's deepest point (Challenger Deep) is over 12,000 meters deep",
+      "statement": "The Mariana Trench's deepest point (Challenger Deep) is 12,000 meters deep",
       "answer": "under",
       "actual": "10,984 m ± 25 m"
     },
     {
-      "statement": "The Mariana Trench is over 5,000 km long",
+      "statement": "The Mariana Trench is 5,000 km long",
       "answer": "under",
       "actual": "2,550 km long"
     },
     {
-      "statement": "The pressure at the bottom of the Mariana Trench is less than 500 times atmospheric pressure",
+      "statement": "The pressure at the bottom of the Mariana Trench is 500 times atmospheric pressure",
       "answer": "over",
       "actual": "About 1,072 times atmospheric pressure (1,086 bar)"
     },
@@ -23,7 +23,7 @@
       "actual": "1–4°C, just above freezing"
     },
     {
-      "statement": "The Mariana Trench is over 200 km wide",
+      "statement": "The Mariana Trench is 200 km wide",
       "answer": "under",
       "actual": "About 69 km wide"
     }

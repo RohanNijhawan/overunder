@@ -3,12 +3,12 @@
   "sourceUrl": "https://en.wikipedia.org/wiki/Great_Wall_of_China",
   "facts": [
     {
-      "statement": "The Great Wall of China is only 5,000 km long",
+      "statement": "The Great Wall of China is 5,000 km long",
       "answer": "over",
       "actual": "21,196.18 km total (2012 archaeological survey)"
     },
     {
-      "statement": "The Great Wall of China averages over 20 meters in height",
+      "statement": "The Great Wall of China averages 20 meters in height",
       "answer": "under",
       "actual": "Most sections are 5–8 meters tall"
     },
@@ -18,13 +18,13 @@
       "actual": "Construction began in the 7th century BC, about 2,700 years ago"
     },
     {
-      "statement": "The top of the Great Wall is over 10 meters wide",
+      "statement": "The top of the Great Wall is 10 meters wide",
       "answer": "under",
       "actual": "Approximately 5 meters wide at the top"
     },
     {
-      "statement": "Over 100,000 workers were simultaneously building the Great Wall at its peak",
-      "answer": "under",
+      "statement": "10,000 workers were simultaneously building the Great Wall at its peak",
+      "answer": "over",
       "actual": "Around 62,000 workers built one major section simultaneously"
     }
   ]

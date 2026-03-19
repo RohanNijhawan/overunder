@@ -3,27 +3,27 @@
   "sourceUrl": "https://en.wikipedia.org/wiki/Nile",
   "facts": [
     {
-      "statement": "The Nile River is less than 6,000 km long",
+      "statement": "The Nile River is 6,000 km long",
       "answer": "over",
       "actual": "7,088 km, the world's longest river"
     },
     {
-      "statement": "The Nile flows through fewer than 5 countries",
+      "statement": "The Nile's drainage basin spans 5 countries",
       "answer": "over",
       "actual": "The drainage basin spans 11 countries"
     },
     {
-      "statement": "The Nile River basin covers over 5 million km²",
+      "statement": "The Nile River basin covers 5 million km²",
       "answer": "under",
       "actual": "2,927,843 km²"
     },
     {
-      "statement": "The Nile River discharges more than 10,000 m³ of water per second at Aswan",
+      "statement": "The Nile River discharges 10,000 m³ of water per second at Aswan",
       "answer": "under",
       "actual": "2,757 m³/s at Aswan"
     },
     {
-      "statement": "The Nile Delta is over 1,000 km wide at the Mediterranean coast",
+      "statement": "The Nile Delta is 1,000 km wide at the Mediterranean coast",
       "answer": "under",
       "actual": "About 240 km wide"
     }

@@ -73,6 +73,8 @@ Only use numbers that appear in the output of these two commands. Do not use any
   - Not trivially obvious — the stated number should be plausible but the real answer surprisingly different
   - Unambiguous and clearly supported by the downloaded article text
 
+> ⚠️ **CRITICAL — STATEMENT WORDING:** The `statement` field must state a plain number with **no directional language**. The player's job is to guess whether the real value is over or under the number in the statement. Never use words like "over", "under", "more than", "fewer than", "less than", "above", "below", "only", "exceeds", or any other phrase that hints at the answer direction. Write statements as neutral assertions: "The Eiffel Tower stands 400 meters tall" (not "The Eiffel Tower stands over 400 meters tall").
+
 ### 4. Write the Facts JSON
 Format each day's facts as:
 

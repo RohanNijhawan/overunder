@@ -3,27 +3,27 @@
   "sourceUrl": "https://en.wikipedia.org/wiki/K%C4%ABlauea",
   "facts": [
     {
-      "statement": "Kīlauea has been above sea level for over 500,000 years",
+      "statement": "Kīlauea has been above sea level for 500,000 years",
       "answer": "under",
       "actual": "Above sea level for approximately 100,000 years (total age 210,000–280,000 years)"
     },
     {
-      "statement": "Kīlauea's summit sits below 1,000 meters",
+      "statement": "Kīlauea's summit sits at 1,000 meters elevation",
       "answer": "over",
       "actual": "Summit elevation is 1,247 m"
     },
     {
-      "statement": "Kīlauea erupted continuously for over 20 years (1983–2018)",
+      "statement": "Kīlauea erupted continuously for 20 years (1983–2018)",
       "answer": "over",
       "actual": "Nearly continuously for approximately 35 years"
     },
     {
-      "statement": "Kīlauea's east rift zone extends over 200 km",
+      "statement": "Kīlauea's east rift zone extends 200 km",
       "answer": "under",
       "actual": "East rift zone extends 125 km"
     },
     {
-      "statement": "Hawaii Volcanoes National Park attracts fewer than 1 million visitors annually",
+      "statement": "Hawaii Volcanoes National Park attracts 1 million visitors annually",
       "answer": "over",
       "actual": "About 2.6 million visitors per year"
     }
