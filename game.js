@@ -1,5 +1,11 @@
 // game.js — requires facts.js to be loaded first (defines getFactsForDate)
 
+function trackEvent(path, title) {
+  if (window.goatcounter?.count) {
+    window.goatcounter.count({ path, title, event: true });
+  }
+}
+
 const MAX_ATTEMPTS = 3;
 
 let state = {
@@ -69,18 +75,28 @@ function handleSubmit() {
 
   state.attempts.push({ guesses: [...state.currentGuesses], score, results });
 
+  const n = state.attempts.length;
+  results.forEach((correct, i) => {
+    const guess = state.currentGuesses[i];
+    const outcome = correct ? "correct" : "wrong";
+    trackEvent(`fact/${i + 1}/attempt-${n}/${guess}/${outcome}`, `Fact ${i + 1}: guessed ${guess}, ${outcome}`);
+  });
+
   if (score === state.facts.length) {
     state.gameOver = true;
     state.won = true;
+    trackEvent(`game/won/attempt-${n}`, `Game Won: attempt ${n}`);
   } else if (state.attempts.length >= MAX_ATTEMPTS) {
     state.gameOver = true;
     state.won = false;
+    trackEvent("game/lost", "Game Lost");
   }
 
   render();
 }
 
 function handleShare() {
+  trackEvent("share", "Share Results");
   const text = buildShareText();
   if (navigator.clipboard) {
     navigator.clipboard.writeText(text).then(showCopyFeedback);
@@ -247,8 +263,8 @@ function renderEndGame() {
       </div>
 
       <div class="wiki-footer">
-        <a href="${state.sourceUrl}" target="_blank" rel="noopener noreferrer">Continue learning on ${state.source} →</a>
-        <a href="https://wikimediafoundation.org/give/" target="_blank" rel="noopener noreferrer">Support Wikipedia</a>
+        <a href="${state.sourceUrl}" target="_blank" rel="noopener noreferrer" onclick="trackEvent('continue-learning', 'Continue Learning')">Continue learning on ${state.source} →</a>
+        <a href="https://wikimediafoundation.org/give/" target="_blank" rel="noopener noreferrer" onclick="trackEvent('support-wikipedia', 'Support Wikipedia')">Support Wikipedia</a>
       </div>
     </div>`;
 }
